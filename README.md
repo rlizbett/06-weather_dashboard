@@ -1,4 +1,4 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Sweater Weather Dashboard
 
 ## Your Task
 
