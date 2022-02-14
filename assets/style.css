@@ -1,0 +1,46 @@
+.col {
+    height: 100%;
+}
+
+p {
+    color: black;
+}
+
+#title {
+    line-height: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, lightblue 0%, rgb(52, 52, 245) 100%);
+}
+
+#dashboard {
+    font-size: 50px;
+    font-style: normal;
+    color: azure;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(23, 23, 117);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.forminput{
+    border: solid 1px #000000;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.card {
+    height: 200px;
+    width: 160px;
+    margin: 2%;
+    padding: 10px;
+
+    background-color: rgb(193, 195, 211);
+}
+
