@@ -22,27 +22,34 @@
             <div class="'search-card">
                 <h3>Search for a city</h3>
                 <form>
-                    <input class="forminput" type="text" id="citytype" placeholder="atx">
+                    <input class="forminput" type="text" id="citytype" placeholder="search">
                     <button class="searchBtn justify-content-center" id="searchBtn">Search</button>
                 </form>
-                <button class="btn clearBtn justify-content-center" id="clearBtn">Clear</button>
+                <button class="clearBtn justify-content-center" id="clearBtn">Clear</button>
                 <hr>
                 <div class="col" id="searchhistory"></div>
             </div>
             <!--city weather results-->
             <div class="container" id="results">
-
+                <h2 id="locationName">
+                    </h3>
+                    <img id="openWeatherIcon" alt="weather icon">
+                    <h3 id=mainTemp>
+                        </h4>
+                        <h5> Humidity: <span id="humidity"></span></p>
+                            <h5> Wind Speed:<span id="windspeed"></span></p>
+                                <h5> UV Index: <span id="uvindex" class=""></span></p>
             </div>
 
             <!--5-day forcast-->
             <div class="container" id="forecast">
-                <h3> Five Day Forcast:</h3>
+                <h3>5-Day Forcast:</h3>
                 <div class="row">
                     <div class="card" id="forecastdiv"></div>
                     <div class="card" id="forecastdiv"></div>
                     <div class="card" id="forecastdiv"></div>
                     <div class="card" id="forecastdiv"></div>
-                    <div class="card" id="forecastdiv"></div>           
+                    <div class="card" id="forecastdiv"></div>
                 </div>
             </div>
 
@@ -51,4 +58,5 @@
     </div>
     <!--script links-->
 </body>
+
 </html>
