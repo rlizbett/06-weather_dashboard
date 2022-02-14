@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Weather Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-<!--dashboard title div-->
-<div class="col text-center text-center" id="title">
-    <h1 id="weatherDash">Sweater Weather Dashboard</h1>
-</div>
-<!--main body div-->
-<div class="bodydiv">
- <!--search for city/history-->
-<!--city weather results-->
-<!--5-day forcast-->
+    <!--dashboard title div-->
+    <div class="col text-center text-center" id="title">
+        <h1 id="weatherDash">Sweater Weather Dashboard</h1>
+    </div>
+    <!--main body div-->
+    <div class="bodydiv">
+        <div class="col">
+            <!--search for city/history-->
+            <div class="'search-card">
+                <h3>Search for a city</h3>
+                <form>
+                    <input class="forminput" type="text" id="citytype" placeholder="atx">
+                    <button class="searchBtn justify-content-center" id="searchBtn">Search</button>
+                </form>
+                <button class="btn clearBtn justify-content-center" id="clearBtn">Clear</button>
+                <hr>
+                <div class="col" id="searchhistory"></div>
+            </div>
+            <!--city weather results-->
+            <div class="container" id="results">
+
+            </div>
+
+            <!--5-day forcast-->
+            <div class="container" id="forecast">
+                <h3> Five Day Forcast:</h3>
+                <div class="row">
+                    <div class="card" id="forecastdiv"></div>
+                    <div class="card" id="forecastdiv"></div>
+                    <div class="card" id="forecastdiv"></div>
+                    <div class="card" id="forecastdiv"></div>
+                    <div class="card" id="forecastdiv"></div>           
+                </div>
+            </div>
 
 
-</div>
-
-<!--script links-->
+        </div>
+    </div>
+    <!--script links-->
 </body>
 </html>
