@@ -1,10 +1,9 @@
 function bringInfo() {
     const newInfo = document.getElementById("citySearch");
     const cityName = document.getElementById("cityName");
-    cityName.innerHTML = new.Name.value
+    cityName.innerHTML = newInfo.value;
 
-
-    fetch("http://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=42cbf04a88a18f2c4bb3aa2d12e6d652")
+    fetch("http://api.openweathermap.org/data/2.5/forecast?q='newInfo.value'&appid=42cbf04a88a18f2c4bb3aa2d12e6d652")
         .then(response => response.json())
         .then(data => {
             for (i = 0; i < 5; i++) {
@@ -36,6 +35,6 @@ function startDay(day) {
     }
 }
 
-for (i = 0; i < 5; i++) {
-    document.getElementById("day" + (i + 1)).innerHTML =weekday[startDay(i)];
-}
+//for (i = 0; i < 5; i++) {
+ //   document.getElementById("day" + (i + 1)).innerHTML = weekday[startDay(i)];
+//}
