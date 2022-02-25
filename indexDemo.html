@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/styleDemo.css">
+</head>
+
+<body onload="deafultS">
+
+    <h1 id="dash1">Weather Dashboard</h1>
+    <p id="inputContent">Search City: <input type="text" id="citySearch"></p>
+    <button onclick="bringInfo()">Search</button>
+    <h2 id="cityName">Austin</h2>
+
+    <div id="weatherDiv">
+        <div id="iconDiv">
+            <div class="icons">
+                <p class="sweather" id="dayOne"></p>
+                <div class="imgs"><img src="" alt="" class="imgDiv" id="imgOne"></div>
+                <p class="minTemp" id="minTempOne">Loading Min Tempature</p>
+                <p class="maxTemp" id="maxTempOne">Loading Max Tempature</p>
+            </div>
+            <div class="icons">
+                <p class="sweather" id="dayTwo"></p>
+                <div class="imgs"><img src="" alt="" class="imgDiv" id="imgTwo"></div>
+                <p class="minTemp" id="minTempTwo">Loading Min Tempature</p>
+                <p class="maxTemp" id="maxTempTwo">Loading Max Tempature</p>
+            </div>
+            <div class="icons">
+                <p class="sweather" id="dayThr"></p>
+                <div class="imgs"><img src="" alt="" class="imgDiv" id="imgThr"></div>
+                <p class="minTemp" id="minTempThr">Loading Min Tempature</p>
+                <p class="maxTemp" id="maxTempThr">Loading Max Tempature</p>
+            </div>
+            <div class="icons">
+                <p class="sweather" id="dayFour"></p>
+                <div class="imgs"><img src="" alt="" class="imgDiv" id="imgFour"></div>
+                <p class="minTemp" id="minTempFour">Loading Min Tempature</p>
+                <p class="maxTemp" id="maxTempFour">Loading Max Tempature</p>
+            </div>
+            <div class="icons">
+                <p class="sweather" id="dayFiv"></p>
+                <div class="imgs"><img src="" alt="" class="imgDiv" id="imgFiv"></div>
+                <p class="minTemp" id="minTempFiv">Loading Min Tempature</p>
+                <p class="maxTemp" id="maxTempFiv">Loading Max Tempature</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
