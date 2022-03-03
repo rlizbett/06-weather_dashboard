@@ -36,11 +36,51 @@ h4 {
 }
 
 .card {
-    height: 200px;
+    height: 250px;
     width: 160px;
     margin: 2%;
     padding: 10px;
 
     background-color: rgb(193, 195, 211);
+}
+
+
+.imgs{
+    height: 100px;
+    width: 100%;
+}
+
+.imgDiv{
+    height: 100px;
+    width: 100%;
+}
+
+.sweather{
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.minTemp {
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 20px;
+    width: 85px;
+    margin: 0%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.maxTemp {
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0%;
+    margin-bottom: 5px;
+    margin-left: 5px;  
 }
 

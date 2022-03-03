@@ -7,7 +7,7 @@
     <title> Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,10 +20,11 @@
         <div class="col">
             <!--search for city/history-->
             <div class="'search-card">
-                <h3>Search for a city</h3>
+                <h3 id="cityName">Search for a city</h3>
                 <form>
-                    <input class="forminput" type="text" id="citytype" placeholder="search">
-                    <button class="searchBtn justify-content-center" id="searchBtn">Search</button>
+                    <input class="forminput" type="text" id="citySearch" placeholder="search">
+                    <button class="searchBtn justify-content-center" id="searchBtn"
+                        onclick="bringInfo()">Search</button>
                 </form>
                 <button class="clearBtn justify-content-center" id="clearBtn">Clear</button>
                 <hr>
@@ -44,11 +45,46 @@
             <div class="container" id="forecast">
                 <h3>5-Day Forcast:</h3>
                 <div class="row">
-                    <div class="card" id="forecastdiv"></div>
-                    <div class="card" id="forecastdiv"></div>
-                    <div class="card" id="forecastdiv"></div>
-                    <div class="card" id="forecastdiv"></div>
-                    <div class="card" id="forecastdiv"></div>
+                    <div class="card" id="forecastdiv1">
+                        <div class="icons">
+                            <p class="sweather" id="dayOne"></p>
+                            <div class="imgs"><img src="" alt="" class="imgDiv" id="imgOne"></div>
+                            <p class="minTemp" id="minTempOne">Loading Min Tempature</p>
+                            <p class="maxTemp" id="maxTempOne">Loading Max Tempature</p>
+                        </div>
+                    </div>
+                    <div class="card" id="forecastdiv2">
+                        <div class="icons">
+                            <p class="sweather" id="dayTwo"></p>
+                            <div class="imgs"><img src="" alt="" class="imgDiv" id="imgTwo"></div>
+                            <p class="minTemp" id="minTempTwo">Loading Min Tempature</p>
+                            <p class="maxTemp" id="maxTempTwo">Loading Max Tempature</p>
+                        </div>
+                    </div>
+                    <div class="card" id="forecastdiv3">
+                        <div class="icons">
+                            <p class="sweather" id="dayThr"></p>
+                            <div class="imgs"><img src="" alt="" class="imgDiv" id="imgThr"></div>
+                            <p class="minTemp" id="minTempThr">Loading Min Tempature</p>
+                            <p class="maxTemp" id="maxTempThr">Loading Max Tempature</p>
+                        </div>
+                    </div>
+                    <div class="card" id="forecastdiv4">
+                        <div class="icons">
+                            <p class="sweather" id="dayFour"></p>
+                            <div class="imgs"><img src="" alt="" class="imgDiv" id="imgFour"></div>
+                            <p class="minTemp" id="minTempFour">Loading Min Tempature</p>
+                            <p class="maxTemp" id="maxTempFour">Loading Max Tempature</p>
+                        </div>
+                    </div>
+                    <div class="card" id="forecastdiv5">
+                        <div class="icons">
+                            <p class="sweather" id="dayFiv"></p>
+                            <div class="imgs"><img src="" alt="" class="imgDiv" id="imgFiv"></div>
+                            <p class="minTemp" id="minTempFiv">Loading Min Tempature</p>
+                            <p class="maxTemp" id="maxTempFiv">Loading Max Tempature</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -56,7 +92,7 @@
         </div>
     </div>
     <!--script links-->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

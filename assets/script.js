@@ -19,7 +19,7 @@ function bringInfo() {
         .catch(err => alert("Sorry, something went wrong"))
 }
 function defaultS() {
-    document.getElementById("citySearch").defaultValue = "Austin";
+    document.getElementById("citySearch").defaultValue = "Search";
     newInfo();
 }
 
@@ -36,5 +36,5 @@ function startDay(day) {
 }
 
 //for (i = 0; i < 5; i++) {
- //   document.getElementById("day" + (i + 1)).innerHTML = weekday[startDay(i)];
+ // document.getElementById("day" + (i + 1)).innerHTML = weekday[startDay(i)];
 //}
